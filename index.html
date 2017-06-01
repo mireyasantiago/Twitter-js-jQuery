@@ -2,13 +2,36 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>To Do App</title>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./css/main.css">
+	<title>Ejercicio Twitter</title>
+	<!--link para los css por orden -->
+	<link rel="stylesheet" href="http:maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-container container-fluid">
+			<div class="navbar-header text-center">
+				<p class="navbar-header-white navbar-text white-color">Twtter</p>
+			</div>
+		</div>
+	</nav>
+  <!-- Area del formula -->
+	<section class="container">
+		<form id="formulario">
+			<div class="form-group">
+				<label for="message">To do:</label>
+				<textarea id="message" name="message" class="form-control" rows="3"></textarea>
+			</div>
+			<button id="add-button" type="submit" class="btn btn-default" disabled>Agregar</button>
+		</form>
+	</section>
+	<section id="posts" class="container">
+	</section>
+
+
+
+  <!-- enlaces de iquery y js por orden --->
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="./js/app.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
